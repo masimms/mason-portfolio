@@ -251,7 +251,7 @@ export default function App() {
             style={{ borderColor: theme.silver, color: theme.navy }}
             aria-label="Email Mason Simms"
           >
-            <Mail size={18} />
+            <Mail size={18} /> Email 
           </a>
         </div>
       </div>
