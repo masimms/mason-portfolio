@@ -13,11 +13,16 @@ const theme = {
   silver: "#C0C0C0",
 };
 
-const Section = ({ id, className = "", style = {}, children }) => (
-  <section id={id} style={style} className={`w-full py-16 md:py-24 ${className}`}>
-    <div className="max-w-6xl mx-auto px-6">{children}</div>
-  </section>
-);
+// Section wrapper
+const Section = ({ id, className = "", style = {}, children, width = "default" }) => {
+  const maxW = width === "wide" ? "max-w-7xl" : "max-w-6xl"; // was always 6xl
+  return (
+    <section id={id} style={style} className={`w-full py-16 md:py-24 ${className}`}>
+      <div className={`${maxW} mx-auto px-6`}>{children}</div>
+    </section>
+  );
+};
+
 
 const Reveal = ({ children, delay = 0 }) => {
   const ref = useRef(null);
@@ -181,8 +186,8 @@ export default function App() {
       </header>
 
 {/* Hero */}
-<Section id="hero" className="bg-white">
-  <div className="grid md:grid-cols-2 gap-10 items-center">
+<Section id="hero" className="bg-white" width="wide">
+  <div className="grid md:grid-cols-2 lg:grid-cols-[1.2fr_1fr] gap-10 items-center">
     <Reveal>
       <div>
         {/* Name */}
@@ -193,25 +198,22 @@ export default function App() {
           Mason Simms
         </h1>
 
-        {/* Tagline */}
+        {/* Tagline - stay on one line on md+ */}
         <h2
-          className="mt-2 text-2xl md:text-3xl font-semibold tracking-tight"
+          className="mt-2 text-2xl md:text-3xl font-semibold tracking-tight md:whitespace-nowrap"
           style={{ color: theme.navy }}
         >
-          <span>Strategy-driven. Tech-curious.</span><br />
-          <span>People-first.</span>
+          Strategy-driven. Tech-curious. People-first.
         </h2>
 
-        {/* Credentials with Six Sigma on its own line */}
+        {/* Credentials - single line on md+ */}
         <div
-          className="mt-4 text-base md:text-lg font-semibold"
+          className="mt-4 text-base md:text-lg font-semibold md:whitespace-nowrap"
           style={{ color: theme.navy }}
         >
-          <span>Business &amp; Tech Strategy</span>
-          <span className="mx-2">|</span>
-          <span>Virginia Tech Graduate</span>
-          <br />
-          <span className="block">Six Sigma Certified</span>
+          Business &amp; Tech Strategy <span className="mx-2">|</span>
+          Virginia Tech Graduate <span className="mx-2">|</span>
+          Six Sigma Certified
         </div>
 
         {/* Summary */}
@@ -220,8 +222,8 @@ export default function App() {
           style={{ color: theme.charcoal }}
         >
           I work at the intersection of consulting, technology strategy, and
-          process improvement. I help teams bridge the gap between data,
-          insights, and execution to deliver measurable results.
+          process improvement. I help teams bridge the gap between data, insights,
+          and execution to deliver measurable results.
         </p>
 
         {/* CTAs */}
