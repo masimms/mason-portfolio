@@ -202,24 +202,26 @@ export default function App() {
           <span>People-first.</span>
         </h2>
 
-        {/* Single-line credentials */}
+        {/* Credentials with Six Sigma on its own line */}
         <div
           className="mt-4 text-base md:text-lg font-semibold"
           style={{ color: theme.navy }}
         >
-          Business &amp; Tech Strategy <span className="mx-2">|</span>
-          Virginia Tech Graduate <span className="mx-2">|</span>
-          Six Sigma Certified
+          <span>Business &amp; Tech Strategy</span>
+          <span className="mx-2">|</span>
+          <span>Virginia Tech Graduate</span>
+          <br />
+          <span className="block">Six Sigma Certified</span>
         </div>
 
-        {/* Refined summary */}
+        {/* Summary */}
         <p
           className="mt-4 text-base md:text-lg leading-relaxed max-w-xl"
           style={{ color: theme.charcoal }}
         >
           I work at the intersection of consulting, technology strategy, and
-          process improvement. I help teams bridge the gap between data, insights,
-          and execution to deliver measurable results.
+          process improvement. I help teams bridge the gap between data,
+          insights, and execution to deliver measurable results.
         </p>
 
         {/* CTAs */}
@@ -253,7 +255,7 @@ export default function App() {
       </div>
     </Reveal>
 
-    {/* Hero image with original motif size */}
+    {/* Image with original motif sizes */}
     <Reveal delay={0.1}>
       <div className="relative isolate">
         <div className="aspect-[4/5] w-full rounded-3xl shadow-lg overflow-hidden relative">
