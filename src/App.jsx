@@ -185,28 +185,48 @@ export default function App() {
   <div className="grid md:grid-cols-2 gap-10 items-center">
     <Reveal>
       <div>
-        <h1 className="text-4xl md:text-6xl font-extrabold leading-tight" style={{ color: theme.navy }}>
+        {/* Name */}
+        <h1
+          className="text-5xl md:text-7xl font-extrabold leading-tight"
+          style={{ color: theme.navy }}
+        >
           Mason Simms
         </h1>
-        <h2 className="mt-2 text-2xl md:text-3xl font-semibold tracking-tight" style={{ color: theme.navy }}>
+
+        {/* Tagline */}
+        <h2
+          className="mt-2 text-2xl md:text-3xl font-semibold tracking-tight"
+          style={{ color: theme.navy }}
+        >
           <span>Strategy-driven. Tech-curious.</span><br />
           <span>People-first.</span>
         </h2>
 
-        {/* Highlights */}
-        <ul className="mt-4 text-base md:text-lg max-w-xl space-y-2">
-          <li className="font-bold" style={{ color: theme.navy }}>Recent Virginia Tech Graduate</li>
-          <li className="font-bold" style={{ color: theme.navy }}>Six Sigma Green Belt Certified</li>
-        </ul>
-        <p className="mt-3 text-lg md:text-xl max-w-xl" style={{ color: theme.charcoal }}>
-          I work at the intersection of consulting, business-technology strategy, and process improvement,
-          bridging the gap between data, insights, and execution to deliver measurable results.
+        {/* Single-line credentials */}
+        <div
+          className="mt-4 text-base md:text-lg font-semibold"
+          style={{ color: theme.navy }}
+        >
+          Business &amp; Tech Strategy <span className="mx-2">|</span>
+          Virginia Tech Graduate <span className="mx-2">|</span>
+          Six Sigma Certified
+        </div>
+
+        {/* Refined summary */}
+        <p
+          className="mt-4 text-base md:text-lg leading-relaxed max-w-xl"
+          style={{ color: theme.charcoal }}
+        >
+          I work at the intersection of consulting, technology strategy, and
+          process improvement. I help teams bridge the gap between data, insights,
+          and execution to deliver measurable results.
         </p>
 
+        {/* CTAs */}
         <div className="mt-6 flex flex-wrap gap-3">
           <a
             href="#resume"
-            onClick={scrollToId("resume")}
+            onClick={scrollToId('resume')}
             className="inline-flex items-center gap-2 px-4 py-2 rounded-xl font-medium shadow"
             style={{ background: theme.oxblood, color: theme.white }}
           >
@@ -221,7 +241,6 @@ export default function App() {
           >
             <Linkedin size={18} /> Connect
           </a>
-          {/* working mailto button */}
           <a
             href="mailto:masonsimms03@gmail.com"
             className="inline-flex items-center gap-2 px-4 py-2 rounded-xl border"
@@ -234,7 +253,7 @@ export default function App() {
       </div>
     </Reveal>
 
-    {/* Hero image with ORIGINAL motif sizes */}
+    {/* Hero image with original motif size */}
     <Reveal delay={0.1}>
       <div className="relative isolate">
         <div className="aspect-[4/5] w-full rounded-3xl shadow-lg overflow-hidden relative">
@@ -256,6 +275,7 @@ export default function App() {
     </Reveal>
   </div>
 </Section>
+
 
 
       {/* About */}
