@@ -53,8 +53,7 @@ const EXPERIENCES = [
     tags: ["Commercialization", "Leadership", "Innovation"],
   },
   {
-    title:
-      "Consulting & Process Improvement Capstones – Career Coaching Startup & Virginia Tech Premium Seating",
+    title: "Management Consulting & Process Improvement Capstones",
     date: "2025",
     bullets: [
       "Built a five-year financial forecast and strategy for a mission-driven career consulting startup.",
