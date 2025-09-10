@@ -76,8 +76,8 @@ const EXPERIENCES = [
     tags: ["Entrepreneurship", "Strategy", "Startups"],
   },
   {
-    title: "Washington Commanders (NFL) – Virtual Sales Combine Participant (Selective 8-Week Program)",
-    date: "2025–Present",
+    title: "Washington Commanders (NFL) – Virtual Sales Combine Participant (8-Week Program)",
+    date: "2025",
     bullets: [
       "Participating in weekly executive-led trainings on customer engagement, business development strategy, and relationship management.",
       "Developing skills in data-driven processes, including pipeline development and client retention strategies.",
