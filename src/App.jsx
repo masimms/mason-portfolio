@@ -76,13 +76,13 @@ const EXPERIENCES = [
     tags: ["Entrepreneurship", "Strategy", "Startups"],
   },
   {
-    title: "One World 501(c)(3) Non-Profit – Co-Founder & Program Lead",
-    date: "2023–Present",
+    title: "Washington Commanders (NFL) – Virtual Sales Combine Participant (Selective 8-Week Program)",
+    date: "2025–Present",
     bullets: [
-      "Coordinated outreach and career-readiness events; recruited and led volunteer teams.",
-      "Built partnerships with local organizations to expand access and program impact.",
+      "Participating in weekly executive-led trainings on customer engagement, business development strategy, and relationship management.",
+      "Developing skills in data-driven processes, including pipeline development and client retention strategies.",
     ],
-    tags: ["Nonprofit", "Leadership", "Community"],
+    tags: ["Business Development", "Relationship Management", "Sales "],
   },
   {
     title: "University of Virginia – Project Management Certificate (In Progress)",
@@ -93,6 +93,7 @@ const EXPERIENCES = [
     tags: ["PM", "Risk", "Stakeholders"],
   },
 ];
+
 
 
 // Skills
@@ -251,7 +252,7 @@ export default function App() {
             style={{ borderColor: theme.silver, color: theme.navy }}
             aria-label="Email Mason Simms"
           >
-            <Mail size={18} /> Email 
+            <Mail size={18} /> Email
           </a>
         </div>
       </div>
